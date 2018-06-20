@@ -1,0 +1,6 @@
+.vertical-menu
+  each link,label in menuItems
+    if link == "menu"
+      a(href="./" class="active")=label
+    else
+      a(href=link)=label

@@ -1,0 +1,47 @@
+#header,#left, #center, #right, #footer { position: absolute;}
+#header {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 10%;
+  background-color: #aaa;
+  color: darkgreen;
+  text-align: center;
+  font-size: 30px
+}
+#left {
+  top: 10%;
+  left: 0px;
+  width: 10%;
+  height: 80%;
+  background-color: #6B8E23
+}
+#center {
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  font-size: 27px;
+  color: #6B8E23;
+  background-color: #ccc
+}
+#right {
+  top: 10%;
+  left: 90%;
+  width: 10%;
+  height: 80%;
+  color: white;
+  text-align: center;
+  background-color: #6B8E23
+}
+#footer {
+  top: 90%;
+  left: 0px;
+  width: 100%;
+  height: 10%;
+  background-color: #aaa;
+  color: darkgreen;
+  text-align: center;
+  font-size: 30px
+}
