@@ -1,5 +1,6 @@
 # Jade/Pug
-Useful examples on Jade template engine
+Useful examples on Jade template engine.
+
 Pug is the new name for Jade Project
 
 # Install
