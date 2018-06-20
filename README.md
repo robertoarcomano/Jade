@@ -1,28 +1,27 @@
-# mongoose
-Useful examples on Mongoose: Multi Insert 10.000 documents on mongodb using mongoose on nodejs
+# Jade/Pug
+Useful examples on Jade template engine
+Pug is the new name for Jade Project
 
 # Install
 ```
-  apt install node npm mongo-org
-  mkdir mongoose
-  cd mongoose
+  apt install node npm 
+  mkdir jade
+  cd jade
   npm init
-  npm install mongoose
+  npm install express pug
 ```
-# Use multi insert
+# Use
 ```
-  cd mongoose
-  ./multi_insert_mongoose.js
+  cd jade
+  ./index.js
 ```
+# Working
+1. source on nodejs (index.js)
+2. template file (index.pug)
+3. CSS file (index.css)
+<img src="jade_template.png">
+
 # Output
-<img src="multiInsert.png">
-
-# Output when inserting 1M documents (model.collection.insert only)
-<img src="multiInsert1M.png">
-
-#### Note
-nodejs has a default maximum limit of RAM of about 1.7G: to increase it you just need to specify command line option 
-```max-old-space-size```.
-
-Example
-```node --max-old-space-size=4096 index.js``` will start index.js with 4G Ram limit.
+1. HTML layout on browser
+2. Source HTML
+<img src="webpage_and_source.png">
