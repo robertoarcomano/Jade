@@ -1,0 +1,21 @@
+p Mixin tests
+
+mixin list(title,items)
+  p=title
+  ul
+    for item in items
+      li=item
+
+mixin checkbox(title,items)
+  p=title
+  select(name=title)
+    for item in items
+      option(value=item)=item
+
+for list in lists
+  +list(list.title,list.items)
+
+hr
+
+for list in lists
+  +checkbox(list.title,list.items)

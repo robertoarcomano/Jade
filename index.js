@@ -25,6 +25,14 @@ var leftMenus = {
 };
 var left = pug.renderFile("views/menu.pug",leftMenus);
 
+var lists = {
+	"lists": [
+		{	"title": "Are we sure?", "items": ["yes","no"] },
+		{	"title": "What do you prefer?", "items": ["hot","cold"] },
+		{	"title": "What time is it?", "items": ["minutes","seconds"] }
+]}
+var right = pug.renderFile("views/right.pug",lists);
+
 var center_title = "Central Page";
 var center_body_initial = "Please click the links on the left";
 
@@ -35,7 +43,7 @@ app.get('/',function(req,res) {
 		"title": "Jade Page",
 		"header": header,
 		"left": left,
-		"right": "Right",
+		"right": right,
 		"center_title": center_title,
 		"center_body": center_body,
 		"footer": "Footer"
