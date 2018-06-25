@@ -5,24 +5,22 @@ Pug is the new name for Jade Project
 
 # Install
 ```
-  apt install node npm 
-  mkdir jade
-  cd jade
+  apt install node npm
+  mkdir Jade
+  cd Jade
   npm init
-  npm install express pug
+  npm install express pug stylus
 ```
 # Use
 ```
-  cd jade
+  cd Jade
   ./index.js
 ```
 # Working
-1. source on nodejs (index.js)
-2. template file (index.pug)
-3. CSS file (index.css)
-<img src="jade_template.png">
-
-# Output
-1. HTML layout on browser
-2. Source HTML
-<img src="webpage_and_source.png">
+1. template using jade
+<img src='template.png'>
+2. mixin jade feature
+<img src='mixin1.png'>
+<img src='mixin2.png'>
+3. stylus css
+<img src="stylus.png">

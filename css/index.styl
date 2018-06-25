@@ -1,0 +1,60 @@
+leftWidthPerc = 18%
+rightWidthPerc = 18%
+centerWidthPerc = 100% - leftWidthPerc - rightWidthPerc
+
+topHeightPerc = 12%
+bottomHeightPerc = 12%
+centerHeightPerc = 100% - topHeightPerc - bottomHeightPerc
+
+
+#header,#left, #center, #right, #footer { position: absolute;}
+#header {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: topHeightPerc
+  background-color: #aaa;
+  color: darkgreen;
+  text-align: center;
+  font-size: 30px
+}
+#left {
+  top: topHeightPerc
+  left: 0px;
+  width: leftWidthPerc
+  height: centerHeightPerc
+  background-color: #6B8E23
+}
+#center {
+  top: topHeightPerc
+  left: leftWidthPerc
+  width: centerWidthPerc
+  height: centerHeightPerc
+  text-align: center;
+  font-size: 27px;
+  color: #6B8E23;
+  background-color: #ccc
+}
+#right {
+  top: topHeightPerc
+  left: leftWidthPerc + centerWidthPerc
+  width: rightWidthPerc
+  height: centerHeightPerc
+  color: white;
+  text-align: left;
+  background-color: #6B8E23
+}
+#footer {
+  top: topHeightPerc + centerHeightPerc
+  left: 0px;
+  width: 100%;
+  height: bottomHeightPerc
+  background-color: #aaa;
+  color: darkgreen;
+  text-align: center;
+  font-size: 30px
+}
+
+p.title {
+  font-size: 18px
+}

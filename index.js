@@ -1,12 +1,28 @@
 #!/usr/bin/node
 var express = require("express");
 var app = express();
+var fs = require("fs");
+var stylus = require("stylus");
+
 const pug = require('pug');
 const SERVERPORT = 80;
 
-app.use(express.static('css'));
+//app.use(express.static('css'));
 app.set('views', './views');
 app.set('view engine', 'pug');
+
+app.get('/css/:css',function(req,res) {
+	var cssFilename = req.params.css;
+	var stylFilename = cssFilename.replace(".css",".styl");
+	var str = fs.readFileSync("css/"+stylFilename).toString();
+	stylus(str)
+	  .set('filename', cssFilename)
+	  .render(function(err, css){
+			if (err)
+				throw err;
+			res.send(css);
+	  });
+});
 
 var headerText = {
 	"text": "Demonstration Jade"
